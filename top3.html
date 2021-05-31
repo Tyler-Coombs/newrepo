@@ -7,62 +7,78 @@
             background-color: burlywood;
         }
         .center {text-align: center; color:burlywood;}
-        div p {background-color: rgb(92, 28, 12); color:lightgray; width: 1000px;}
-        ul {background-image: url("https://images.squarespace-cdn.com/content/v1/569b0a9fdf40f311e7162738/1519101122870-HDSMDJO5A47DTQRG5URI/ke17ZwdGBToddI8pDm48kMgXDiUt1GJcldMuoAn6DuFZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpz1l4wGMrjlN7-TPP9j46GG-gBbPfAfFGG68Wm1CKxPCTdq3faZTtygL9WglonkKfI/Burger-Heaven-thumb.png");
-            width: 400px;
-            height: 200px;
-            padding: 50px;
-            margin: 20px;
-            border: 15px solid brown;
-            font-size: 30;
+        div p {background-color: rgb(92, 28, 12); color:lightgray; width: auto;}
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color:lightblue;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+        li {
+            float: left;
+            border-right: 1px solid #bbb;
+            text-align: center;
+        }
+        li a {
+            display:block;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        li:last-child {
+            border-right: none;
         }
         a {background-color:burlywood; border: 5px solid teal;}
     </style>
 Food
 </head>
-    <body>
-        <h1><i class="fas fa-hamburger"></i>wikiBURGER<i class="fas fa-hamburger"></i></h1>
-        <h3>Main Menu</h3>
-        <nav role="navigation" aria-label="Main Menu">
-            <ul class="navbar">
+    <body class="grid-container">
+        <h1 class="grid-item1"><i class="fas fa-hamburger"></i>wikiBURGER<i class="fas fa-hamburger"></i></h1>
+        <nav class ="grid-item7" role="navigation" aria-label="Main Menu">
+            <ul class ="flex-container">
+                <li style= font-family:Arial, Helvetica, sans-serif; text-align:center;>Main Menu</li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="top3.html">Top 3 Burger Joints</a></li>
+                <li><a href="https://www.facebook.com/Johnny-Maes-181828876096917/">Johnny and Mae's</a></li>
+                <li><a href="https://www.bernardstanleygastropub.com">Bernard Stanley's Gastropub</a></li>
+                <li><a href="https://www.fiveguys.ca/">Five Guys</a></li>
             </ul>
         </nav>
-        <h2 class="center">Tyler's Top 3</h2>
-            <aside><blockquote><p>At the base level, a burger is a piece of meet and a bun with something on it. It's simple but it seems to make a lot of people happy.</p>
-            <cite>- Danny Meyer</cite></blockquote></aside>
-            <p>Here are my choices for the top three places to grab a burger here in town:</p>
-            <h3>1. Johnny and Mae's</h3>
-            <p>You can not discuss burgers in St. John's without talking about Johnny and Mae's. This food truck's take on classic American Cheeseburgers is delicious.
-            <div>
-            <p>The flagship features two smashed beef patties, melty american cheese, bacon, shredded lettuce, and house "dirty sauce" (an enhanced version
-            of big mac sauce).</p>
-            <p>They also serve a southern fried chicken burger and usually have special burger that rotates to something new weekly.</p>
-            <p>A link to Johnny and Mae's Facebook Page can be found below. From there you can see the menu, order food, or just browse through mouthwatering pictures 
-            of what they are serving!<br></p>
-        <a href="https://www.facebook.com/Johnny-Maes-181828876096917/">Johnny and Mae's</a>
-        <h3>2. Bernard Stanley's Gastropub</h3>
-            <p>Located on Duckworth, this restuarent has a great selection of very creative burgers that leaves little else to be desired.
-            <div>
-            <p>From a mushroom swiss burger to duck burger, this burger menu has something for everyone.</p>
-            <p>A standout is the PB&J burger featuring strawberry jam, peanut butter,
-            caramelized onions, brie cheese, jalapenos, lettuce, and bacon on a pretzel bun.</p>
-            <p>Check out the extensive burger menu using the link to the restuarant website below.<br></p>
-            <a href="https://www.bernardstanleygastropub.com">Bernard Stanley's Gastropub</a>
-        <h3>3. Five Guys Burgers and Fries</h3>
-            <p>Technically speaking, this American chain is not a local burger joint. 
-            <div>
-            <p>They have never operated in the province before but have a new location opening at the Avalon Mall in the coming weeks!</p>
-            <p>Five Guys makes the cut because they make some of the best fast food burgers money can buy.</p> 
-            <p>A favorite of burger lovers who get to travel out of the province, there is much excitement for the opening here in St. John's.</p>
-            <p>In case you are unfamiliar with Five Guys, check out the short video below from Food Network to see what the excitement is about!</p>
-            </div>
-            </p>
-            <p></p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/l6quREmoPVM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h2 class="grid-item16">Tyler's Top 3</h2>
+                <div class="grid-item17"><h3>1. Johnny and Mae's</h3>
+                    <p>You can not discuss burgers in St. John's without talking about Johnny and Mae's. This food truck's take on classic American Cheeseburgers is delicious.</p>
+                    <p>The flagship features two smashed beef patties, melty american cheese, bacon, shredded lettuce, and house "dirty sauce" (an enhanced version
+                    of big mac sauce).</p>
+                    <p>They also serve a southern fried chicken burger and usually have special burger that rotates to something new weekly.</p>
+                    <p>A link to Johnny and Mae's Facebook Page can be found below. From there you can see the menu, order food, or just browse through mouthwatering pictures 
+                    of what they are serving!
+                        <br><a href="https://www.facebook.com/Johnny-Maes-181828876096917/">Johnny and Mae's</a></p>
+                </div>
+                
+                <div class="grid-item18"><h3>2. Bernard Stanley's Gastropub</h3>
+                    <p>Located on Duckworth, this restuarent has a great selection of very creative burgers that leaves little else to be desired.
+                    <p>From a mushroom swiss burger to duck burger, this burger menu has something for everyone.</p>
+                    <p>A standout is the PB&J burger featuring strawberry jam, peanut butter,
+                    caramelized onions, brie cheese, jalapenos, lettuce, and bacon on a pretzel bun.</p>
+                    <p>Check out the extensive burger menu using the link to the restuarant website below.
+                        <br><a href="https://www.bernardstanleygastropub.com">Bernard Stanley's Gastropub</a></p>
+                </div>
+                
+                <div class="grid-item19"><h3>3. Five Guys Burgers and Fries</h3>
+                    <p>Technically speaking, this American chain is not a local burger joint.</p>
+                    <p>They have never operated in the province before but have a new location opening at the Avalon Mall in the coming weeks!</p>
+                    <p>Five Guys makes the cut because they make some of the best fast food burgers money can buy.</p> 
+                    <p>A favorite of burger lovers who get to travel out of the province, there is much excitement for the opening here in St. John's.</p>
+                    <p>In case you are unfamiliar with Five Guys, check out the short video below from Food Network to see what the excitement is about!</p>
+                    <p>The following link will take you to the Five Guys website:
+                        <br><a href="https://www.fiveguys.ca/">Five Guys</a></p>
+                </div>
+    <iframe class="grid-item14" width="560" height="315" src="https://www.youtube.com/embed/l6quREmoPVM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </body>
-    <p>The following link will take you to the Five Guys website:</p>
-    <a href="https://www.fiveguys.ca/">Five Guys</a>
-    <small style=background-color:burlywood;><br><br>Tyler is in no way affiliated with these restuarants or The Food Network and this website is not a paid promotion.</small>
+    
+    <small class="grid-item15" style=background-color:burlywood;><br><br>Tyler is in no way affiliated with these restuarants or The Food Network and this website is not a paid promotion.</small>
     </html>
